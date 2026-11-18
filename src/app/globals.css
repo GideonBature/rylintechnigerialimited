@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #00a651;
+  --color-brand-deep: #007a3b;
+  --color-brand-soft: #d9f2e3;
+  --color-ink: #0b1410;
+  --color-ink-2: #131f19;
+  --color-paper: #f4f7f3;
+  --color-white-2: #ffffff;
+  --color-mute: #56645c;
+  --color-line: #cfd9d2;
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+}
+
+html { overflow-x: clip; scroll-behavior: smooth; scroll-padding-top: 84px; }
+body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, .font-display { font-family: var(--font-display); font-optical-sizing: auto; letter-spacing: -0.025em; }
+
+/* drafting-paper grids */
+.grid-paper {
+  background-image:
+    linear-gradient(to right, rgba(11,20,16,.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11,20,16,.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.grid-ink {
+  background-image:
+    linear-gradient(to right, rgba(0,166,81,.13) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,166,81,.13) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* cut-corner frame, echoing the slanted roof of the emblem */
+.cut { clip-path: polygon(0 0, calc(100% - 44px) 0, 100% 44px, 100% 100%, 0 100%); }
+.cut-sm { clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 22px, 100% 100%, 0 100%); }
+
+.scan::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to bottom, transparent 0, rgba(0,166,81,.22) 50%, transparent 100%);
+  height: 30%; transform: translateY(-100%); animation: scan 6s linear infinite;
+}
+@keyframes scan { to { transform: translateY(420%); } }
+
+@keyframes drift { to { transform: translateX(-50%); } }
+.drift { animation: drift 40s linear infinite; }
+
+:focus-visible { outline: 3px solid var(--color-brand); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .drift, .scan::after { animation: none; }
+  html { scroll-behavior: auto; }
+}
