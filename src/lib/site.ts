@@ -84,12 +84,12 @@ export const fleet = [
 export const credentials = [
   { k: "CAC", t: "Certificate of Incorporation", d: "RC 1809740 · 24 June 2021" },
   { k: "FIRS", t: "Tax Clearance Certificate", d: "Tax ID 23951057-0001" },
-  { k: "PENCOM", t: "Pension compliance", d: "Pension Commission certificate" },
-  { k: "ITF", t: "Industrial Training Fund", d: "ITF certificate" },
-  { k: "NSITF", t: "Employees' Compensation", d: "NSITF certificate 2026" },
-  { k: "BPP", t: "Bureau of Public Procurement", d: "BPP registration" },
-  { k: "KADPPA", t: "Kaduna procurement authority", d: "KADPPA registration" },
-  { k: "Premises", t: "Business premises certificate", d: "Registered Kaduna office" },
+  { k: "PENCOM", t: "Pension compliance" },
+  { k: "ITF", t: "Industrial Training Fund" },
+  { k: "NSITF", t: "Employees' Compensation", d: "2026" },
+  { k: "BPP", t: "Bureau of Public Procurement" },
+  { k: "KADPPA", t: "Kaduna procurement authority" },
+  { k: "BPC", t: "Business premises certificate" },
 ];
 
 export const gallery = [

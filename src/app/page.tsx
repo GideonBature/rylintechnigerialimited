@@ -345,9 +345,9 @@ function Standing() {
           </Reveal>
           <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:col-span-8">
             {credentials.map((c, i) => (
-              <Reveal key={c.k} delay={i * 0.04} className="flex gap-4 bg-ink-2 p-6">
+              <Reveal key={c.k} delay={i * 0.04} className="flex items-center gap-4 bg-ink-2 p-6">
                 <span className="flex h-12 w-16 shrink-0 items-center justify-center border border-brand/50 font-mono text-[11px] font-semibold text-brand">{c.k}</span>
-                <div><p className="font-semibold">{c.t}</p><p className="mt-1 text-sm text-white/55">{c.d}</p></div>
+                <div><p className="font-semibold">{c.t}</p>{c.d && <p className="mt-1 text-sm text-white/55">{c.d}</p>}</div>
               </Reveal>
             ))}
           </div>
