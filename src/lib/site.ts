@@ -83,10 +83,10 @@ export const fleet = [
 
 export const credentials = [
   { k: "CAC", t: "Certificate of Incorporation", d: "RC 1809740 · 24 June 2021" },
-  { k: "FIRS", t: "Tax Clearance Certificate", d: "Tax ID 23951057-0001" },
+  { k: "FIRS", t: "Tax Clearance Certificate" },
   { k: "PENCOM", t: "Pension compliance" },
   { k: "ITF", t: "Industrial Training Fund" },
-  { k: "NSITF", t: "Employees' Compensation", d: "2026" },
+  { k: "NSITF", t: "Employees' Compensation" },
   { k: "BPP", t: "Bureau of Public Procurement" },
   { k: "KADPPA", t: "Kaduna procurement authority" },
   { k: "BPC", t: "Business premises certificate" },
