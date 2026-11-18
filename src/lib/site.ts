@@ -19,7 +19,7 @@ export const company = {
 
 export const stats = [
   { v: "5", l: "integrated divisions under one accountable company" },
-  { v: "₦753M+", l: "in awarded contracts documented in our 2026 profile" },
+  { v: "₦753M+", l: "in awarded contracts documented in our company profile" },
   { v: "2021", l: "incorporated under CAMA · RC 1809740" },
   { v: "8", l: "statutory certificates & registrations on file" },
 ];

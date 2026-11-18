@@ -278,7 +278,7 @@ function Projects() {
             </Reveal>
           ))}
         </div>
-        <p className="mt-5 text-xs text-mute">Values are contract award sums from award letters in our 2026 company profile. Copies are available to prospective clients on request.</p>
+        <p className="mt-5 text-xs text-mute">Values are contract award sums from award letters in our company profile. Copies are available to prospective clients on request.</p>
 
         <div className="mt-20 grid gap-8 lg:grid-cols-12">
           <Reveal className="lg:col-span-4">
